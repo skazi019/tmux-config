@@ -1,5 +1,4 @@
 
-setw -g xterm-keys on
 set -s escape-time 10                     # faster command sequences
 set -sg repeat-time 600                   # increase repeat timeout
 set -s focus-events on
@@ -32,10 +31,5 @@ bind -n C-l send-keys C-l \; run 'sleep 0.2' \; clear-history
 
 
 
-# tmux messages are displayed for 4 seconds
-set -g display-time 4000
-
-
-
-# set the default-terminal to use screen-256color
-set -g default-terminal "screen-256color"
+# tmux messages are displayed for 2 seconds
+set -g display-time 2000
