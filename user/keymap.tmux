@@ -15,7 +15,7 @@ bind r source-file ~/.tmux.conf \; display '~/.tmux.conf reloaded!'
 
 # split window
 bind-key "|" split-window -h -c "#{pane_current_path}"
-bind-key "\\" split-window -fh -c "#{pane_current_path}"
+bind-key "-" split-window -v -c "#{pane_current_path}"
 
 
 
